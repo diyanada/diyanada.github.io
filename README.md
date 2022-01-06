@@ -1,2 +1,1 @@
-# Personal-web-application
-Personal-web-application
+# Diyanada Gunawardena Personal-web-application
