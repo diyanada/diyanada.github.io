@@ -1,560 +1,263 @@
-<html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <link href="style.css" rel="stylesheet"/>
-    <link href="assest/bootstrap-5.0.0-beta1-dist/css/bootstrap.min.css" rel="stylesheet"/>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="/assests/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link href="style.css" rel="stylesheet">
-    <link
-            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-            rel="stylesheet"
-    />
-    <link href="script.js" rel="stylesheet">
-    <title>Diyanada Gunawardena</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Diyanada's Portfolio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="assets/img/favicon/site.webmanifest">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
 </head>
 
 <body>
 
-<input id="check" type="checkbox">
-<label class="nav-bar" for="check">
-    <i class="fas fa-bars" id="btn"></i>
-    <i class="fas fa-times" id="cancel"></i>
-</label>
-<div class="sidebar">
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
 
-    <a class="active" href="#MainPage" onclick=" forPageOne()">
-        <i class="fas fa-qrcode"></i>
-        <span>Dashboard</span>
-    </a>
+      <a href="index.html" class="logo d-flex align-items-center  me-auto me-lg-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <h1 class="ml-auto mr-auto">Diyanada's Portfolio</h1>
+      </a>
 
-    <a href="#About-Me" onclick="forPage02()">
-        <i class="fas fa-link"></i>
-        <span>Shortcuts</span>
-    </a>
-    <a href="#Skill" onclick="forPage04()">
-        <i class="fas fa-stream"></i>
-        <span>Overview</span>
-    </a>
-    <a href="#Service" onclick="forPage03()">
-        <i class="fas fa-calendar"></i>
-        <span>Events</span>
-    </a>
-    <a href="#Contact" onclick="forPage05()">
-        <i class="far fa-question-circle"></i>
-        <span>About</span>
-    </a>
-    <!-- <a href="#">
-        <i class="fas fa-sliders-h"></i>
-        <span>Services</span>
-    </a> -->
-    <a href="#">
-        <i class="far fa-envelope"></i>
-        <span>Contact</span>
-    </a>
-</div>
-
-
-<section class="main">
-</section>
-<section class="main-borser">
-    <img alt="" class="my-image" src="assest/img/diya.jpg"/>
-
-    <h1 class="name">Diyanada Gunawardena</h1>
-    <h1 class="job">Senior Software Engineer</h1>
-
-    <div class="social-links">
+      <nav id="navbar" class="navbar">
         <ul>
-            <li>
-                <a href="https://www.linkedin.com/in/diyanada/" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-            </li>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="dropdown"><a href="#"><span>Gallery</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="gallery.html">Nature</a></li>
+              <li><a href="gallery.html">People</a></li>
+              <li><a href="gallery.html">Architecture</a></li>
+              <li><a href="gallery.html">Animals</a></li>
+              <li><a href="gallery.html">Sports</a></li>
+              <li><a href="gallery.html">Travel</a></li>
+              <li class="dropdown"><a href="#"><span>Sub Menu</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="#">Sub Menu 1</a></li>
+                  <li><a href="#">Sub Menu 2</a></li>
+                  <li><a href="#">Sub Menu 3</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
-        <ul>
-            <li>
-                <a href="https://www.facebook.com/diyanada" target="_blank">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <a href="#" target="_blank">
-                    <i class="fab fa-twitter"></i>
-                </a>
-            </li>
-        </ul>
+      </nav><!-- .navbar -->
+
+      <div class="header-social-links">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
     </div>
-    <div class="header-buttons">
-        <a class="btn btn-primary" href="" target="_self">Download CV</a>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex flex-column justify-content-center align-items-center" data-aos="fade" data-aos-delay="1500">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 text-center">
+          <h2>I'm <span>Diyanada J. Gunawardena</span> a Professional Software Engineer from Colombo, Sri Lanka</h2>
+          <p>
+            A results-driven, customer-focused, articulate and analytical team player who  can think “out of the box.”
+            Strong in design and integration of problem-solving skills. Expert in Java, and Spring Framework with database analysis and design.
+          </p>
+          <a href="contact.html" class="btn-get-started">Contact Me</a>
+        </div>
+      </div>
     </div>
-    <div class="copyrights">© 2020 - 2021 All rights reserved.</div>
+  </section><!-- End Hero Section -->
 
-    <!-- ----------------------------PAGE 02 START HERE------------------------------------------ -->
-    <section class="page-01" id="MainPage">
-        <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-12">
-                <div class="title-block">
-                    <h2 class="malindu">Diyanada Gunawardena</h2>
-                </div>
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+
+      <div class="section-header">
+        <h2>Testimonials</h2>
+        <p>What they are saying</p>
+      </div>
+
+      <div class="slides-3 swiper">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="mt-auto">
+                I would known Mr. Diyanada as a dedicated, competent, smart working, time concerned, skillful, efficient software engineer, who always thrives to perfection at his utmost capacity. He focus deeply on what he does providing insights to uplift the quality of work. I see Mr. Diyanada as a well experienced as well as well educated expert in his field of study. The academic and the professional competence he possesses is undoubtedly unmatchable, and would indeed prove his worth and adds value to wherever he is. I have learned much more at the times I've worked with him at MISyn, which has helped my personal and professional growth during my tenure there, as a QA.
+              </p>
+              <div class="profile">
+                <img src="assets/img/testimonials/ovini-ratnayake.png" class="testimonial-img" alt="">
+                <h3>Ovini Ratnayake</h3>
+                <h4>IT Auditor</h4>
+              </div>
             </div>
-            <div class="item">
-                <div class="sp-subtitle">Senior Software Engineer</div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="mt-auto mb-auto">
+                Diyanada is one of the most dedicated professionals I’ve worked with. He makes sure that everyone is on the same page and focused on the main goal. His contributions were really valuable to the team. I highly recommend Diyanada.
+              </p>
+              <div class="profile">
+                <img src="assets/img/testimonials/dilukshi-visvalingam.png" class="testimonial-img" alt="">
+                <h3>Dilukshi Visvalingam</h3>
+                <h4>Business Analyst</h4>
+              </div>
             </div>
+          </div><!-- End testimonial item -->
 
-            <!-- <ul class="flip">
-                    <li class="f1">Designer</li>
-                    <li class="f2">Developer</li>
-                    <li class="f3">App Maker</li>
-                    <li class="f4">Engineer</li>
-                  </ul> -->
-        </div>
-    </section>
-    <!-- ------------------------PAGE 02 ----------------------------------------- -->
-
-    <section class="main-page-03" id="About-Me">
-        <h1 class="myself">About Me</h1>
-        <!-- <h1 class="myself">#</h1> -->
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm head-of-my-details">
-                    <p class="my-details">A results-driven, customer-focused, articulate and analytical Software Engineer who can think “out of the box.” Strong in design and integration of problem-solving skills. Expert in Java, Spring Framework with database analysis and design.
-
-                        Skilled in requirements specifications, user documentation, and architectural systems research. Interested in a challenging technical track career in an application development environment.</p>
-                    <div class="main-what">
-                        <h3 class="whta-do-01">What</h1>
-                            <h3 class="what-do-02">I Do</h1>
-                    </div>
-                    <div class="main-wocommerce">
-                        <img src="https://img.icons8.com/nolan/50/bank-card-dollar.png"/>
-                        <h5>Java</h2>
-                            <p>Over 7 years of experience in java.</p>
-                    </div>
-                    <div class="main-webdesing">
-                        <img src="https://img.icons8.com/nolan/50/web-design.png"/>
-                        <h5>Web Development</h5>
-                        <p>Design and Development of the Web Apps and Websites following all the W3 and Google Web Developer Guidelines</p>
-                    </div>
-                   
-                </div>
-                <div class="col-sm">
-                    <div class="age-stuff">
-                        <p class="age"> Age : </p>
-                        <p class="age"> Residence : </p>
-                        <p class="age"> Address : </p>
-                        <p class="age"> e-mail : </p>
-                        <p class="age"> Phone : </p>
-                        <p class="aa-age"> 32 </p>
-                        <p class="a-age"> Sri Lanka </p>
-                        <p class="b-age"> Gampha </p>
-                        <p class="c-age"> diyanada@gmail.com</p>
-                        <p class="d-age"> 071-3196876 </p>
-
-                        <div class="main-Management">
-                            <img src="https://img.icons8.com/nolan/50/commercial-development-management.png"/>
-                            <h5>Digital Marketing</h5>
-                            <p>I identify and evaluates new digital technologies and use web analytics tools to measure site traffic to better optimize marketing campaigns.</p>
-                        </div>
-
-                        <div class="main-Full-Stack-Developer">
-                            <img src="https://img.icons8.com/nolan/50/source-code.png"/>
-                            <h5>Full Stack Development</h5>
-                            <p>Over 7 years of experience in Spring farmework and ReactJS.</p>
-                        </div>
-
-                    </div>
-                </div>
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="mt-auto mb-auto">
+                Diyanada & I have studied the same discipline at the same university. During the academic period I've colosely worked with Diyanada. He is a target-oriented person with a higher level of analytical skills. Also, he is highly experienced not only in the Java tech stack but also in most of the technologies used in the industry. He was a good team player who had shown his leadership skills in his group projects and activities in the university. As a colleague Diyanada earns my highest recommendation.
+              </p>
+              <div class="profile">
+                <img src="assets/img/testimonials/jayashan-liyanage.png" class="testimonial-img" alt="">
+                <h3>Jayashan Liyanage</h3>
+                <h4>Technical Consultant</h4>
+              </div>
             </div>
+          </div><!-- End testimonial item -->
 
-
-        </div>
-        </div>
-        <div class="main-fun-fact">
-            <h3 class="fun">Fun</h3>
-            <h3 class="facts">Facts</h3>
-        </div>
-
-        <div class="main-fun-fact-dtails">
-            <div class="happy-cust">
-                <img src="https://img.icons8.com/nolan/64/filled-like.png"/>
-                <h6>Happy Clienst </h6>
-                <h5>100 </h5>
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="mt-auto mb-auto">
+                Diyanada isn’t just a technically exceptional software developer; he’s also a standout leader.
+              </p>
+              <div class="profile">
+                <img src="assets/img/testimonials/elilvany-kogulshiam.png" class="testimonial-img" alt="">
+                <h3>Elilvany Kogulshiam</h3>
+                <h4>Associate Technical Lead</h4>
+              </div>
             </div>
+          </div><!-- End testimonial item -->
 
-
-            <div class="Working-Hours">
-                <img src="https://img.icons8.com/nolan/64/last-24-hours.png"/>
-                <h6>Working Hours</h6>
-                <h5>600 </h5>
-
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="mt-auto mb-auto">
+                His humility, generosity for knowledge sharing, experimenting with technological advancements, incomparable leadership and the team spirit are the qualities what I appreciate the most. His unique sense of humour has lead to have good relationships with his teammates too. I am indeed delighted to have worked with him. I would wish him all the very best in all his future endeavours.
+              </p>
+              <div class="profile">
+                <img src="assets/img/testimonials/ovini-ratnayake.png" class="testimonial-img" alt="">
+                <h3>Ovini Ratnayake</h3>
+                <h4>IT Auditor</h4>
+              </div>
             </div>
+          </div><!-- End testimonial item -->
 
-
-            <div class="Awards-Won">
-                <img src="https://img.icons8.com/nolan/64/medal.png"/>
-                <h6>Awards Won</h6>
-                <h5>20</h5>
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="mt-auto mb-auto">
+                Diyanada is an excellent resource, and a master at Java programming has been a real gem to the company. He makes sure all the deadlines meet and that also with the highest standards. Diyanada is a hardworking and dedicated person who will complete whatever project he allocated to within the given time frame. I would recommend and endorse Diyanada.
+              </p>
+              <div class="profile">
+                <img src="assets/img/testimonials/umila-harindra-perera.png" class="testimonial-img" alt="">
+                <h3>Umila Harindra Perera</h3>
+                <h4>Senior DevOps Engineer</h4>
+              </div>
             </div>
+          </div><!-- End testimonial item -->
 
-        </div>
-
-
-    </section>
-
-
-    <!-- ------------------------PAGE - 03 ---------------------------------------- -->
-    <section class="main-page-04" id="Service">
-        <div class="row">
-            <div class="col-sm">
-
-                <!-- <section class="page-05" id="Projects">
-                    <section class="main5">
-                        <div class="gallery-wrap">
-                            <h1>My Works</h1>
-                            <input id="blue" name="color" type="radio"/>
-                            <label for="blue">WEBDESING</label>
-                            <input id="green" name="color" type="radio"/>
-                            <label for="green">SYSTEM</label>
-                            <input id="red" name="color" type="radio"/>
-                            <label for="red">WORDPRESS</label>
-                            <input checked="checked" id="reset" name="color" type="radio"/>
-                            <label for="reset">ALL PROJECTS</label>
-                            <div class="clr"></div>
-
-
-                         
-                            <div class="gallry-image blue"
-                                 onclick="window.open(');">&nbsp;
-                                <img alt="" src=""/>
-                            </div>
-                            <div class="gallry-image green">
-                                <img alt="" src=""/>
-                            </div>
-                            <div class="gallry-image red">
-                                <img alt="" src=""/>
-                            </div>
-                            <div class="gallry-image blue">
-                                <img alt="" src="assests/img/gallry/g4.png"/>
-                            </div>
-                            <div class="gallry-image green">
-                                <img alt="" src="assests/img/gallry/g5.png"/>
-                            </div>
-                            <div class="gallry-image red">
-                                <img alt="" src="assests/img/gallry/g7.jpg"/>
-                            </div>
-                            <div class="gallry-image blue">
-                                <img alt="" src="assests/img/gallry/g10.jpg"/>
-                            </div>
-                            <div class="clr"></div>
-                        </div>
-                    </section>
-                </section> -->
-
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="mt-auto mb-auto">
+                Diyanada is a highly skilled software engineer that I have worked with. His analytical and problem-solving skills were very helpful when working on the projects with him. Also, his support to the team and commitment to do on-time deliveries are highly appreciated.
+              </p>
+              <div class="profile">
+                <img src="assets/img/testimonials/thanuja-thilakarathna.png" class="testimonial-img" alt="">
+                <h3>Thanuja Thilakarathna</h3>
+                <h4>Associate Technical Specialist</h4>
+              </div>
             </div>
-        </div>
-    </section>
-
-
-    <!-- ------------------------PAGE - 04 ---------------------------------------- -->
-
-    <section class="main-page-05" id="Skill">
-        <h1 class="resume1">Resu</h1>
-        <h1 class="resume2">me </h1>
-        <h3 class="Education">Education</h3>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm">
-                    <div class="left-part">
-                        <h5 class="year1">2014-2017</h5>
-                        <span class="cmpz11">University of Vocational Technology</span>
-                        
-                    </div>
-                    <div class="vl"></div>
-                    <div class="right-part">
-                        <h5 class="course1">Bachelor of Technology</h5>
-                        <p class="course1-dtails">BTech,Software Technology,
-                             Second Class Lower Division</p>
-                    </div>
-
-
-                    <div class="left-part-022">
-                        <h5 class="year1-02">2001 - 2014</h5>
-                        <span class="cmpz1-02">Gampha national college</span>
-                    </div>
-                    <div class="vl-02"></div>
-
-
-                    <div class="right-part-02">
-                        <h5 class="course1-02">G.C.E Advanced Level</h5>
-                        <p class="course1-dtails-02"></p>
-                    </div>
-
-                    <div class="left-part-033">
-                        <h5 class="year1-033">2021</h5>
-                        <span class="cmpz1-033">London Metropolitan <br> University</span>
-                    </div>
-                    <div class="vl-033"></div>
-
-
-                    <div class="right-part-033">
-                        <h5 class="course1-033">Master of Business Administration</h5>
-                        <p class="course1-dtails-033"> MBA</p>
-                    </div>
-
-                    <div class="left-part-044">
-                        <h5 class="year1-044">2021</h5>
-                        <span class="cmpz1-044">London Metropolitan University</span>
-                    </div>
-                    <div class="vl-044"></div>
-
-
-                    <div class="right-part-044">
-                        <h5 class="course1-044">Kingston University</h5>
-                        <p class="course1-dtails-044">Master of Science - MSc, Software Engineering, Distinction</p>
-                    </div>
-
-
-                </div>
-                <div class="col-sm">
-                    <h1 class="d-skill">Java</h1>
-                    <div class="main-skill-bar">
-
-                        <p>Java</p>
-                        <div class="container-skill">
-                            <div class="skill-bar-main"></div>
-                            <div class="skills html"></div>
-                        </div>
-
-                        <p>Spring Framework</p>
-                        <div class="container-skill">
-                            <div class="skill-bar-main"></div>
-                            <div class="skills css"></div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-
-        <div class="container" id="contain119">
-            <div class="row">
-                <div class="col-sm">
-                    <div class="absaloot-section-02">
-                        <h1 class="Experience">Experience</h1>
-
-                        <div class="left-part-03">
-                            <h5 class="year1-03">2020 - Current</h5>
-                            <span class="cmpz1-03">M I Synergy (Pvt) Ltd</span>
-                        </div>
-                        <div class="vl-03"></div>
-
-                        <div class="right-part-03">
-                            <h5 class="course1-03">Senior Software Engineer</h5>
-                            <p class="course1-dtails-03">Engaged in (Java) projects.</p>
-                        </div>
-
-
-                        <div class="left-part-04">
-                            <h5 class="year1-04">2015 - 2020</h5>
-                            <span class="cmpz1-04">M I Synergy (Pvt) Ltd</span>
-                        </div>
-                        <div class="vl-04"></div>
-
-                        <div class="right-part-04">
-                            <h5 class="course1-04">Software Engineer</h5>
-                            <p class="course1-dtails-04">Engaged in (Java) projects.</p>
-                        </div>
-
-                        <div class="left-part-055">
-                            <h5 class="year1-055">2013 - 2015</h5>
-                            <span class="cmpz1-055">Yahalu.com</span>
-                        </div>
-                        <div class="vl-055"></div>
-
-                        <div class="right-part-055">
-                            <h5 class="course1-055"> Software Developer</h5>
-                            <p class="course1-dtails-055">Engaged in (Java) projects.</p>
-                        </div>
-
-                        <div class="left-part-066">
-                            <h5 class="year1-066">2012 - 2013</h5>
-                            <span class="cmpz1-066">Vocational Training Authority</span>
-                        </div>
-                        <div class="vl-066"></div>
-
-                        <div class="right-part-066">
-                            <h5 class="course1-066">Associate Software Developer</h5>
-                            <p class="course1-dtails-066">Engaged in (Java) projects.</p>
-                        </div>
-
-
-                    </div>
-                </div>
-
-                <div class="col-sm">
-
-                    <h1 class="Coding-Skills">Web Skills</h1>
-                    <div class="main-skill-bar-02">
-
-                        <p>JavaScript</p>
-                        <div class="container-skill">
-                            <div class="skill-bar-main"></div>
-                            <div class="skills html"></div>
-
-                        </div>
-
-
-                        <p>PHP</p>
-                        <div class="container-skill">
-                            <div class="skill-bar-main"></div>
-                            <div class="skills css"></div>
-                        </div>
-
-                        <p>HTML/CSS</p>
-                        <div class="container-skill">
-                            <div class="skill-bar-main"></div>
-                            <div class="skills js"></div>
-                        </div>
-
-                        <p>React JS</p>
-                        <div class="container-skill">
-                            <div class="skill-bar-main"></div>
-                            <div class="skills php"></div>
-                        </div>
-
-                        <p>JavaScript</p>
-                        <div class="container-skill">
-                            <div class="skill-bar-main"></div>
-                            <div class="skills php"></div>
-                        </div>
-
-
-                        <div class="knolge">
-                            <h1 class="knlge">Knowledges</h1>
-                            <div class="k-tool">
-                                <li>Java</li>
-                                <li>Spring framework</li>
-                                <li>Problem-Solving</li>
-                                <li>AWS</li>
-                                <li>Web Design</li>
-                                <li>Web Development</li>
-                                <li>Social Networking</li>
-                                <li>database analysis</li>
-                                <li>database design</li>
-                                <li>C++</li>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-
-    </section>
-
-
-    <section class="main-page-06" id="Contact">
-        <h1 class="Contact">Contact</h1>
-
-        <div class="main-all-contact">
-            <div class="place">
-                <img src="https://img.icons8.com/nolan/50/worldwide-location.png"/>
-                <p>Gampha</p>
-            </div>
-            <div class="phone">
-                <img src="https://img.icons8.com/nolan/50/phone-disconnected.png"/>
-                <p>071-3196876</p>
-            </div>
-            <div class="mail">
-                <img src="https://img.icons8.com/nolan/50/apple-mail.png"/>
-                <p>diyanada@gmail.com</p>
-            </div>
-            <div class="job-02">
-                <img src="https://img.icons8.com/nolan/50/new-job.png"/>
-                <p>Freelance Available</p>
-            </div>
-        </div>
-
-
-        <div class="container" id="contact-forum">
-            <form>
-
-                <input id="fname" name="firstname" placeholder="Your name.." type="text">
-
-
-                <input id="lname" name="lastname" placeholder="Your last name.." type="text">
-
-
-                <select id="country" name="country">
-                    <option value="australia">Client</option>
-                    <option value="canada">Buyer</option>
-                    <option value="usa">Helper</option>
-                </select>
-
-
-                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-                <input type="submit" value="Submit">
-            </form>
-        </div>
-
-
-    </section>
-
-    <!-- --------------------------------MENU BAR AND OTHE BACKGOURDN THING------------------------------------------ -->
-    <section class="menu-bar">
-
-        <div class="menu-bar-new">
-            <!--
-            <li><a onclick="document.getElementById('MainPage').style.zIndex = '500'" href="#MainPage"><i class="fas fa-home"></i></a></li> -->
-
-
-            <li><a href="#MainPage" onclick=" forPageOne()"><i class="fas fa-home"></i></a></li>
-
-
-            <!-- <li><a   onclick="document.getElementById('About-Me').style.zIndex = '400'" href="#About-Me"><i class="fas fa-user-alt"></i></a></li> -->
-
-            <li><a href="#About-Me" onclick="forPage02()"><i class="fas fa-user-alt"></i></a></li>
-
-
-            <!-- <li><a onclick="document.getElementById('pa-03').style.zIndex = '100'" href="#pa-01"><i class="fas fa-briefcase"></i></a></li> -->
-
-
-            <li><a href="#Skill" onclick="forPage04()"><i class="fas fa-graduation-cap"></i></a></li>
-
-
-            <li><a href="#Service" ><i class="fas fa-briefcase"></i></a></li>
-
-
-            <li><a href="#Contact" onclick="forPage05()"><i class="fas fa-address-card"></i></a></li>
-
+          </div><!-- End testimonial item -->
 
         </div>
+        <div class="swiper-pagination"></div>
+      </div>
 
-    </section>
+    </div>
+  </section><!-- End Testimonials Section -->
 
-</section>
-<script src="script.js"></script>
+  <main id="main" data-aos="fade" data-aos-delay="1500">
 
-<img alt="" class="main-bg" src="assest/img/main_bg.png"/>
-</section>
+  </main><!-- End #main -->
 
-<script src="assest/bootstrap-5.0.0-beta1-dist/js/bootstrap.min.js">
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Diyanada J. Gunawrdena &lt;diyanada@gmail.com&gt;</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by Diyanada J. Gunawrdena &lt;diyanada@gmail.com&gt;
+      </div>
+    </div>
+  </footer><!-- End Footer -->
 
-</script>
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
+  <div id="preloader">
+    <div class="line"></div>
+  </div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
-
-</html>
 
 </html>
